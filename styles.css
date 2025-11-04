@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Atma:wght@300;400;500;600;700&family=Mystery+Quest&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Shadows+Into+Light&display=swap');
+
+
+body {
+    font-family: "Atma", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: slategray;
+    text-align: center;
+    font-size: larger;
+}
+
+
+
+
+#hero {
+    background-image: url(images/bassfish.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    font-weight: 600;
+}
+
+
+A:hover {
+    font-size: 150%;
+    background-color: lightgrey;
+}
+
+header {
+    position: sticky;
+    margin: 10px;
+}
+
+
+#loc-cards,
+#services-cards {
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+}
+
+.address,
+.spooling {
+    background: #96a9a5;
+    padding: 40px;
+}
+
+.phone,
+.bait {
+    background: #bad446;
+    padding: 40px;
+}
+
+.email,
+.permits {
+    background: #946ea1;
+    padding: 40px;
+
+}
+
+.location,
+.services {
+    background-color: lightgoldenrodyellow;
+    height: 400px;
+    border-style: double;
+    border-width: thick;
+    margin: 20px;
+}
+
+.bait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bait-list {
+    display: flex;
+    gap: 1rem;
+    list-style: circle;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+
+footer {
+    clear: both;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: lightgray;
+    padding: 8px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.baitprice {
+    width: 400px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: slategray;
+    }
+
+    nav {
+        flex-direction: row;
+        background-color: white;
+    }
+
+    #loc-cards,
+    #services-cards {
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .location,
+    .services {
+        height: 400px;
+        width: 600px;
+        align-content: center;
+        background-color: lightgreen;
+    }
+
+    .baitprice {
+        width: 600px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: slategray;
+    }
+
+    nav {
+        flex-direction: row;
+        background-color: white;
+    }
+
+    #loc-cards,
+    #services-cards {
+        height: 700px;
+        flex-direction: row;
+    }
+
+    .location,
+    .services {
+        height: 400px;
+        width: 800px;
+        align-content: center;
+        background-color: lightskyblue;
+    }
+
+    .baitprice {
+        width: 1000px;
+    }
+}
